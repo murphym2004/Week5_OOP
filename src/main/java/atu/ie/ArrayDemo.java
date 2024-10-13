@@ -26,5 +26,14 @@ public class ArrayDemo {
 
         myArray[10] = newvalue;
         System.out.println("" + myArray[10]);
+        try {
+            myArray[10] = newvalue;
+            System.out.println("" + myArray[10]);
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("error");
+        }
+
+        scanner.close();
     }
 }
